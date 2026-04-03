@@ -48,7 +48,10 @@ class RunStats:
             self.failed_urls.append(failed_url)
 
     def progress_line(self) -> str:
-        pct = min(100, int(self.total_products / self.limit * 100))
+        if self.limit <= 0:
+            pct = 0
+        else:
+            pct = min(100, int(self.total_products / self.limit * 100))
         bar = ("█" * (pct // 5)).ljust(20)
         return f"  [{bar}] {pct}%  ({self.total_products}/{self.limit})"
 
@@ -385,6 +388,17 @@ def extract_variants(page, base_price: str, sels: dict) -> list[dict]:
     """
     variants = []
 
+    def _normalize_price(raw, default: str) -> str:
+        """Safely coerce Shopify/Woo prices that may be cents, strings, or floats."""
+        try:
+            val = float(raw)
+            # Shopify product JSON commonly stores cents as integers
+            if val > 1000:  # heuristic: treat as cents if very large
+                val = val / 100
+            return f"{val:.2f}"
+        except Exception:
+            return default
+
     def _make_variant(opt1_name="", opt1_val="", opt2_name="", opt2_val="",
                       opt3_name="", opt3_val="", sku="", price=""):
         return {
@@ -422,12 +436,21 @@ def extract_variants(page, base_price: str, sels: dict) -> list[dict]:
 
         if product_data and isinstance(product_data, dict):
             raw_variants = product_data.get("variants", [])
-            options      = product_data.get("options", ["Title"])
-            # options is an array of option-axis names, e.g. ["Size","Color","Material"]
+            options_raw  = product_data.get("options", ["Title"])
+
+            # options can be a list of dicts ({name: "Size"}) or strings
+            options = []
+            for opt in options_raw if isinstance(options_raw, list) else ["Title"]:
+                if isinstance(opt, dict):
+                    options.append(opt.get("name") or opt.get("label") or "Option")
+                else:
+                    options.append(str(opt) if opt else "Option")
+            if not options:
+                options = ["Title"]
 
             for v in raw_variants:
-                raw_p = v.get("price", 0)
-                price = f"{int(raw_p) / 100:.2f}" if raw_p else base_price
+                raw_p = v.get("price", base_price)
+                price = _normalize_price(raw_p, base_price)
 
                 opt_vals = [
                     v.get("option1", ""),
@@ -496,7 +519,7 @@ def extract_variants(page, base_price: str, sels: dict) -> list[dict]:
                         if i < len(attr_vals)
                     ) if len(attr_keys) > 2 else "",
                     sku       = v.get("sku", ""),
-                    price     = str(v.get("display_price", base_price)),
+                    price     = _normalize_price(v.get("display_price", base_price), base_price),
                 ))
             if variants:
                 print(f"    [variants] {len(variants)} found via WooCommerce JSON")
@@ -883,7 +906,8 @@ def extract_cards(catalog_page, context, base_url, sels, skip_handles,
             print(f"    [!] Card error ({type(e).__name__}) -- skipping.")
             continue
 
-        temp_handle = slugify(card_title or "untitled")
+        fallback_seq = total_written + len(batch) + 1
+        temp_handle = slugify(card_title) if card_title else f"item-{fallback_seq}"
         if temp_handle in skip_handles:
             print(f"    [skip] {card_title}")
             continue

@@ -1,21 +1,21 @@
-﻿Product Handle (URL Slug),Product Title,Full Description (HTML),Option Name (e.g. Size / Color / Weight),Option Value (e.g. Small / Red / 500g),Variant SKU Code,Price,Image URL (Click to Preview)
-spearow,Spearow,<p>No description available.</p>,Title,Default Title,,63.00,"=HYPERLINK(""https://s.w.org/images/core/emoji/11/svg/1f50d.svg"",""View Image"")"
-spearow,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/001.png"",""View Image"")"
-spearow,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/021-350x350.png"",""View Image"")"
-spearow,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/013-350x350.png"",""View Image"")"
-spearow,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/024-350x350.png"",""View Image"")"
-spearow,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/031-350x350.png"",""View Image"")"
-spearow,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/033-350x350.png"",""View Image"")"
-weedle,Weedle,<p>No description available.</p>,Title,Default Title,,87.00,"=HYPERLINK(""https://s.w.org/images/core/emoji/11/svg/1f50d.svg"",""View Image"")"
-weedle,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/002.png"",""View Image"")"
-weedle,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/013-350x350.png"",""View Image"")"
-weedle,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/020-350x350.png"",""View Image"")"
-weedle,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/017-350x350.png"",""View Image"")"
-weedle,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/003-350x350.png"",""View Image"")"
-beedrill,Beedrill,<p>No description available.</p>,Title,Default Title,,105.00,"=HYPERLINK(""https://s.w.org/images/core/emoji/11/svg/1f50d.svg"",""View Image"")"
-beedrill,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/003.png"",""View Image"")"
-beedrill,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/015-350x350.png"",""View Image"")"
-beedrill,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/008-350x350.png"",""View Image"")"
-beedrill,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/019-350x350.png"",""View Image"")"
-beedrill,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/002-350x350.png"",""View Image"")"
-beedrill,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/005-350x350.png"",""View Image"")"
+﻿Product Handle (URL Slug),Product Title,Full Description (HTML),Option 1 Name,Option 1 Value,Option 2 Name,Option 2 Value,Option 3 Name,Option 3 Value (or overflow),Variant SKU Code,Price,Image URL (Click to Preview),Original Source Link
+description,Description,<p>No description available.</p>,Title,Default Title,,,,,,63.00,"=HYPERLINK(""https://s.w.org/images/core/emoji/11/svg/1f50d.svg"",""View Image"")","=HYPERLINK(""https://scrapeme.live/shop/Bulbasaur/"",""View Original"")"
+description,,,,,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/001.png"",""View Image"")",
+description,,,,,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/008.png"",""View Image"")",
+description,,,,,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/017.png"",""View Image"")",
+description,,,,,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/015.png"",""View Image"")",
+description,,,,,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/031-350x350.png"",""View Image"")",
+description,,,,,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/033-350x350.png"",""View Image"")",
+description,Description,<p>No description available.</p>,Title,Default Title,,,,,,87.00,"=HYPERLINK(""https://s.w.org/images/core/emoji/11/svg/1f50d.svg"",""View Image"")","=HYPERLINK(""https://scrapeme.live/shop/Ivysaur/"",""View Original"")"
+description,,,,,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/002.png"",""View Image"")",
+description,,,,,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/006.png"",""View Image"")",
+description,,,,,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/017.png"",""View Image"")",
+description,,,,,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/015.png"",""View Image"")",
+description,,,,,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/003-350x350.png"",""View Image"")",
+description,Description,<p>No description available.</p>,Title,Default Title,,,,,,105.00,"=HYPERLINK(""https://s.w.org/images/core/emoji/11/svg/1f50d.svg"",""View Image"")","=HYPERLINK(""https://scrapeme.live/shop/Venusaur/"",""View Original"")"
+description,,,,,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/003.png"",""View Image"")",
+description,,,,,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/004.png"",""View Image"")",
+description,,,,,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/022.png"",""View Image"")",
+description,,,,,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/016.png"",""View Image"")",
+description,,,,,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/002-350x350.png"",""View Image"")",
+description,,,,,,,,,,,"=HYPERLINK(""https://scrapeme.live/wp-content/uploads/2018/08/005-350x350.png"",""View Image"")",

@@ -1,0 +1,83 @@
+
+============================================================
+  RUN STARTED: 2026-04-04 01:12:56
+============================================================
+[log] Output mirrored to: scraper.log
+[init] Removed old file: sample_upload.csv
+[init] Removed old file: sample_upload_client_review.csv
+
+============================================================
+  UNIVERSAL E-COMMERCE SCRAPER
+============================================================
+  Product page scraping : ON
+  Product limit         : 20
+  Batch size            : 10
+  Request delay         : 3.0s
+  Max page retries      : 2
+  Browser visible       : NO
+  Shopify CSV           : sample_upload.csv
+  Client Review CSV     : sample_upload_client_review.csv
+  Log file              : scraper.log
+============================================================
+
+[mode] URL PATTERN -- pages 1 to 2
+
+============================================================
+  PAGE 1 -> https://scrapeme.live/shop/page/1/
+============================================================
+  [page 1] 16 cards found
+
+  -- Product 0001 ------------------------------------------
+  [                    ] 0%  (0/20)
+  [url]  https://scrapeme.live/shop/Bulbasaur/
+    [variants] None found — using default single variant
+  [name]     Description
+  [price]    63.00
+  [images]   7 total
+  [variants] 1
+  [AI]       Raw fallback used
+  [rows]     7 rows added to batch
+
+  -- Product 0008 ------------------------------------------
+  [█                   ] 5%  (1/20)
+  [url]  https://scrapeme.live/shop/Ivysaur/
+    [variants] None found — using default single variant
+  [name]     Description
+  [price]    87.00
+  [images]   6 total
+  [variants] 1
+  [AI]       Raw fallback used
+  [rows]     6 rows added to batch
+
+  [saved] 1 products (13 rows)
+  [file1] sample_upload.csv
+  [file2] sample_upload_client_review.csv
+
+  -- Product 0014 ------------------------------------------
+  [██                  ] 10%  (2/20)
+  [url]  https://scrapeme.live/shop/Venusaur/
+    [variants] None found — using default single variant
+  [name]     Description
+  [price]    105.00
+  [images]   7 total
+  [variants] 1
+  [AI]       Raw fallback used
+  [rows]     7 rows added to batch
+  [limit] Reached 20 -- stopping.
+
+  [saved] 1 products (7 rows)
+  [file1] sample_upload.csv
+  [file2] sample_upload_client_review.csv
+
+============================================================
+  SCRAPING COMPLETE
+============================================================
+  Runtime          : 0m 41s
+  Products scraped : 3
+  CSV rows written : 20
+  Gemini AI rate   : 0% (0 OK / 3 fallback)
+  Page failures    : 0
+============================================================
+  Shopify file : sample_upload.csv
+  Client file  : sample_upload_client_review.csv
+============================================================
