@@ -1,6 +1,7 @@
 # Universal E-Commerce ETL Pipeline
 **Author:** Jituparna Dihingia  
-**Domain:** B2B Private Intelligence & Data Automation
+**Domain:** B2B Private Intelligence & Data Automation  
+**Live Repository:** [Shopify-product-automation](https://github.com/PAPUDIHINGIA/Shopify-product-automation)
 
 ## Overview
 A production-grade ETL (Extract, Transform, Load) pipeline built with Python, Playwright, and Pandas. This architecture is designed to navigate complex e-commerce DOM structures, bypass anti-bot mechanisms, and extract multi-variant product data into structured client deliverables. 
@@ -25,5 +26,5 @@ This tool does not just scrape; it logically audits visual selectors, intercepts
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/yourusername/universal-etl-pipeline.git](https://github.com/yourusername/universal-etl-pipeline.git)
-   cd universal-etl-pipeline
+   git clone [https://github.com/PAPUDIHINGIA/Shopify-product-automation.git](https://github.com/PAPUDIHINGIA/Shopify-product-automation.git)
+   cd Shopify-product-automation
